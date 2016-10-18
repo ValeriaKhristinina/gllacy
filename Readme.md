@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Valeriya Khristinina](https://up.htmlacademy.ru/htmlcss/15/user/176152).
-* Наставник: Данил Ефремов.
+* Наставник: [Данил Ефремов](https://up.htmlacademy.ru/htmlcss/15/user/67675).
 
 ---
 
