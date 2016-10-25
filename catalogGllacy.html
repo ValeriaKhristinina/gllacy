@@ -52,11 +52,11 @@
     </div>
   </header>
   <main class="container">
-    <div class="breadcrumbs">
-      <a href="#">Главная</a>
-      <a href="#">Каталог</a>
-      <a class="active" href="#">Сливочное</a>
-    </div>
+    <ul class="breadcrumbs">
+      <li><a href="#">Главная</a></li>
+      <li><a href="#">Каталог</a></li>
+      <li><a class="active" href="#">Сливочное</a></li>
+    </ul>
     <h1 class="page-title">Сливочное мороженное</h1>
     <form class="filter" method="post">
       <fieldset class="sort">
@@ -77,7 +77,7 @@
         <legend class="filter-title">Жирность:</legend>
         <ul>
           <li><label><input type="radio" name="fatness" value="0">0%</label></li>
-          <li><label><input type="radio" name="fatness" value="10" checked="">до 10%</label></li>
+          <li><label><input type="radio" name="fatness" value="10" checked="checked">до 10%</label></li>
           <li><label><input type="radio" name="fatness" value="30"></label>до 30%</li>
           <li><label><input type="radio" name="fatness" value="30+"></label>выше 30%</li>
         </ul>
@@ -85,8 +85,8 @@
       <fieldset>
         <legend class="filter-title">Наполнители:</legend>
         <ul>
-          <li><label><input type="checkbox" name="chocolate" checked="">Шоколадные</label></li>
-          <li><label><input type="checkbox" name="sugar-powder" checked="">Сахарные присыпки</label></li>
+          <li><label><input type="checkbox" name="chocolate" checked="checked">Шоколадные</label></li>
+          <li><label><input type="checkbox" name="sugar-powder" checked="checked">Сахарные присыпки</label></li>
           <li><label><input type="checkbox" name="fruits">Фрукты</label></li>
           <li><label><input type="checkbox" name="syrups">Сиропы</label></li>
           <li><label><input type="checkbox" name="jams">Джемы</label></li>
@@ -97,73 +97,73 @@
     <section class="main-content">
       <article class="product">
         <img src="http://placehold.it/270/270" width="270" height="270" alt="">
-        <span class="price">310р/кг</span>
+        <div class="price"><span>310</span><img class="ruble" src="http://placehold.it/31/36" width="31" height="36" alt="">/кг</div>
         <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
         <a class="btn" href="#">Быстрый просмотр</a>
       </article>
       <article class="product">
         <img src="http://placehold.it/270/270" width="270" height="270" alt="">
-        <span class="price">380р/кг</span>
+        <div class="price"><span>380</span><img class="ruble" src="http://placehold.it/31/36" width="31" height="36" alt="">/кг</div>
         <a href="#">Сливочно-кофейное с кусочками шоколада</a>
         <a class="btn" href="#">Быстрый просмотр</a>
       </article>
       <article class="product">
         <img src="http://placehold.it/270/270" width="270" height="270" alt="">
-        <span class="price">355р/кг</span>
+        <div class="price"><span>355</span><img class="ruble" src="http://placehold.it/31/36" width="31" height="36" alt="">/кг</div>
         <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
         <a class="btn" href="#">Быстрый просмотр</a>
       </article>
       <article class="product">
         <img src="http://placehold.it/270/270" width="270" height="270" alt="">
-        <span class="price">415р/кг</span>
+        <div class="price"><span>415</span><img class="ruble" src="http://placehold.it/31/36" width="31" height="36" alt="">/кг</div>
         <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
         <a class="btn" href="#">Быстрый просмотр</a>
       </article>
       <article class="product">
         <img src="http://placehold.it/270/270" width="270" height="270" alt="">
-        <span class="price">325р/кг</span>
+        <div class="price"><span>325</span><img class="ruble" src="http://placehold.it/31/36" width="31" height="36" alt="">/кг</div>
         <a href="#">Сливочное с брусничным джемом</a>
         <a class="btn" href="#">Быстрый просмотр</a>
       </article>
       <article class="product">
         <img src="http://placehold.it/270/270" width="270" height="270" alt="">
-        <span class="price">410р/кг</span>
+        <div class="price"><span>410</span><img class="ruble" src="http://placehold.it/31/36" width="31" height="36" alt="">/кг</div>
         <a href="#">Сливочно-черничное с цельными ягодами черники</a>
         <a class="btn" href="#">Быстрый просмотр</a>
       </article>
       <article class="product">
         <img src="http://placehold.it/270/270" width="270" height="270" alt="">
-        <span class="price">375р/кг</span>
+        <div class="price"><span>375</span><img class="ruble" src="http://placehold.it/31/36" width="31" height="36" alt="">/кг</div>
         <a href="#">Сливочно-лимонное с карамельной присыпкой</a>
         <a class="btn" href="#">Быстрый просмотр</a>
       </article>
       <article class="product">
         <img src="http://placehold.it/270/270" width="270" height="270" alt="">
-        <span class="price">320р/кг</span>
+        <div class="price"><span>320</span><img class="ruble" src="http://placehold.it/31/36" width="31" height="36" alt="">/кг</div>
         <a href="#">Сливочное с шоколадной стружкой</a>
         <a class="btn" href="#">Быстрый просмотр</a>
       </article>
       <article class="product">
         <img src="http://placehold.it/270/270" width="270" height="270" alt="">
-        <span class="price">440р/кг</span>
+        <div class="price"><span>440</span><img class="ruble" src="http://placehold.it/31/36" width="31" height="36" alt="">/кг</div>
         <a href="#">Сливочно-ванильное с кусочками шоколада</a>
         <a class="btn" href="#">Быстрый просмотр</a>
       </article>
       <article class="product">
         <img src="http://placehold.it/270/270" width="270" height="270" alt="">
-        <span class="price">435р/кг</span>
+        <div class="price"><span>435</span><img class="ruble" src="http://placehold.it/31/36" width="31" height="36" alt="">/кг</div>
         <a href="#">Сливочное с ментоловым сиропом</a>
         <a class="btn" href="#">Быстрый просмотр</a>
       </article>
       <article class="product">
         <img src="http://placehold.it/270/270" width="270" height="270" alt="">
-        <span class="price">355р/кг</span>
+        <div class="price"><span>355</span><img class="ruble" src="http://placehold.it/31/36" width="31" height="36" alt="">/кг</div>
         <a href="#">Сливочное с кусочкамичерного шоколада</a>
         <a class="btn" href="#">Быстрый просмотр</a>
       </article>
       <article class="product">
         <img src="http://placehold.it/270/270" width="270" height="270" alt="">
-        <span class="price">420р/кг</span>
+        <div class="price"><span>420</span><img class="ruble" src="http://placehold.it/31/36" width="31" height="36" alt="">/кг</div>
         <a href="#">Сливочное с мятным сиропом</a>
         <a class="btn" href="#">Быстрый просмотр</a>
       </article>
