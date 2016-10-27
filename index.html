@@ -9,10 +9,27 @@
 <body>
   <header class="main-header">
     <div class="container">
-      <a class="logo" href="#"><img src="http://placehold.it/155x65" alt="" width="155" height="65" /></a>
+      <div class="logo"><img src="http://placehold.it/155x65" alt="" width="155" height="65" /></div>
       <nav class="main-navigation">
         <ul>
-          <li><a href="#">Каталог</a></li>
+          <li>
+            <div class="catalog">
+
+              <a href="#">Каталог</a>
+              <form class="catalog-sort">
+                <select name="product">
+                  <optgroup label="Новинки">
+                    <option value="creamy">Сливочное</option>
+                    <option value="sherbets">Щербеты</option>
+                    <option value="fruit-ice">Фруктовый лед</option>
+                    <option value="melorin">Мелорин</option>
+                  </optgroup>
+                </select>
+
+              </form>
+
+            </div>
+          </li>
           <li><a href="#">Доставка и оплата</a></li>
           <li><a href="#">О Компании</a></li>
         </ul>
@@ -21,9 +38,21 @@
         <div class="user-block">
           <div class="search">
             <a href="#">Поиск</a>
+            <form class="search-form">
+              <input type="search" name="search" placeholder="Что ищем?">
+            </form>
           </div>
           <div class="login">
             <a href="#">Вход</a>
+            <form class="login-form">
+              <input type="email" name="email" placeholder="Электронная почта">
+              <input type="password" name="password" placeholder="Пароль">
+              <button class="btn" type="submit" name="log-in">Войти</button>
+              <div class="login-info">
+                <a href="#">Забыли пароль?</a>
+                <a href="#">Новая регистрация</a>
+              </div>
+            </form>
           </div>
           <div class="shopping-cart">
             <a href="#">Пусто</a>
@@ -142,6 +171,14 @@
           <br> Для заказов по телефону:
           <br> <b>8 812 450-25-25</b>
           <br> (с 10 до 20 ежедневно)</p>
+        <a class="btn" href="#modal-one">Форма обратной связи</a>
+        <form class="modal" id="modal-one">
+          <h2>Мы обязательно Вам ответим!</h2>
+          <input type="text" name="name" placeholder="Как Вас зовут?" />
+          <input type="email" name="email" placeholder="Ваша почта для ответа?" />
+          <textarea name="" id="" cols="30" rows="5" placeholder="Напишите что-нибудь..."></textarea>
+          <button class="btn" type="submit">Отправить</button>
+        </form>
       </section>
     </section>
 
