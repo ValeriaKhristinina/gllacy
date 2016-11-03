@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <title>HTML Academy: Глейси</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
+
 <body>
   <header class="main-header">
-    <div class="container">
+    <div class="container clearfix">
       <a class="logo" href="#"><img src="img/pictures/logo.svg" alt="logo" width="154" height="64"></a>
       <nav class="main-navigation">
         <ul>
@@ -16,24 +18,23 @@
           <li><a href="#">О Компании</a></li>
         </ul>
       </nav>
-      <div class="header-right">
-        <div class="user-block">
-          <div class="search">
-            <a href="#"><img src="ing/pictures/loupe.png" width="17" height="17" alt="Search"></a>
-          </div>
-          <div class="login">
-            <a href="#">Вход</a>
-          </div>
-          <div class="cart">
-            <a  href="#">2 товара</a>
-            <form class="product-in-cart">
-              <div class="product-in-cart-1">
-                <button type="button" name="delete"></button>
-                <img src="img/pictures/ice cream 1 small.png" width="33" height="33" alt="ice cream">
-                <a href="#">Пломбир с апельсиновым джемом</a>
-                <span>1,5 кг x 200 руб.</span><span>300 руб.</span>
-              </div>
-              <div class="product-in-cart-2">
+      <div class="user-block">
+        <div class="search">
+          <a href="#"><img src="img/pictures/loupe.png" width="17" height="17" alt="Search"></a>
+        </div>
+        <div class="login">
+          <a href="#">Вход</a>
+        </div>
+        <div class="cart">
+          <a href="#">2 товара</a>
+          <form class="product-in-cart">
+            <div class="product-in-cart-1">
+              <button type="button" name="delete"></button>
+              <img src="img/pictures/ice cream 1 small.png" width="33" height="33" alt="ice cream">
+              <a href="#">Пломбир с апельсиновым джемом</a>
+              <span>1,5 кг x 200 руб.</span><span>300 руб.</span>
+            </div>
+            <div class="product-in-cart-2">
               <button type="button" name="delete"></button>
               <img src="img/pictures/ice cream 2 small.png" width="33" height="33" alt="ice cream">
               <a href="#">Клубничный пломбир с присыпкой из белого шоколада</a>
@@ -42,8 +43,6 @@
             <span class="summ">Итого: 750 руб.</span>
             <button class="btn" type="submit" name="button">Отправить заказ</button>
           </form>
-          </div>
-
         </div>
         <div class="info-contact">
           <p>С 10 до 22, ежедневно
@@ -52,6 +51,7 @@
       </div>
     </div>
   </header>
+
   <main class="container">
     <ul class="breadcrumbs">
       <li><a href="#">Главная</a></li>
@@ -59,8 +59,8 @@
       <li><a class="active" href="#">Сливочное</a></li>
     </ul>
     <h1 class="page-title">Сливочное мороженное</h1>
-    <form class="filter" method="post">
-      <fieldset class="sort">
+    <form class="filter clearfix" method="post">
+      <fieldset class="sort filter-sort">
         <legend class="filter-title">Сортировка:</legend>
         <select name="sort">
           <option value="first-popular">По популярности</option>
@@ -69,33 +69,60 @@
           <option value="fatness">По жирности</option>
         </select>
       </fieldset>
-      <fieldset class="price-controls">
+      <fieldset class="price-controls filter-sort">
         <legend class="filter-title">Цена:</legend>
         <output name="result"></output>
         <input type="range" min="100" max="500" step="10" name="name" value="150" multiple="2">
       </fieldset>
-      <fieldset class="fatness">
+      <fieldset class="fatness filter-sort">
         <legend class="filter-title">Жирность:</legend>
         <ul>
-          <li><label><input type="radio" name="fatness" value="0">0%</label></li>
-          <li><label><input type="radio" name="fatness" value="10" checked="checked">до 10%</label></li>
-          <li><label><input type="radio" name="fatness" value="30"></label>до 30%</li>
-          <li><label><input type="radio" name="fatness" value="30+"></label>выше 30%</li>
+          <li>
+            <label>
+              <input type="radio" name="fatness" value="0">0%</label>
+          </li>
+          <li>
+            <label>
+              <input type="radio" name="fatness" value="10" checked="checked">до 10%</label>
+          </li>
+          <li>
+            <label>
+              <input type="radio" name="fatness" value="30">
+            </label>до 30%</li>
+          <li>
+            <label>
+              <input type="radio" name="fatness" value="30+">
+            </label>выше 30%</li>
         </ul>
       </fieldset>
-      <fieldset>
+      <fieldset class="fillers filter-sort">
         <legend class="filter-title">Наполнители:</legend>
         <ul>
-          <li><label><input type="checkbox" name="chocolate" checked="checked">Шоколадные</label></li>
-          <li><label><input type="checkbox" name="sugar-powder" checked="checked">Сахарные присыпки</label></li>
-          <li><label><input type="checkbox" name="fruits">Фрукты</label></li>
-          <li><label><input type="checkbox" name="syrups">Сиропы</label></li>
-          <li><label><input type="checkbox" name="jams">Джемы</label></li>
+          <li>
+            <label>
+              <input type="checkbox" name="chocolate" checked="checked">Шоколадные</label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" name="sugar-powder" checked="checked">Сахарные присыпки</label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" name="fruits">Фрукты</label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" name="syrups">Сиропы</label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" name="jams">Джемы</label>
+          </li>
         </ul>
       </fieldset>
-      <button class="btn" type="submit" name="button">Применить</button>
+      <button class="btn filter-sort" type="submit" name="button">Применить</button>
     </form>
-    <section class="main-content">
+    <section class="content clearfix">
       <article class="product">
         <img src="img/pictures/1.png" width="267" height="267" alt="ice cream">
         <div class="price"><span>310</span><img class="ruble" src="img/pictures/ruble.svg" width="32" height="37" alt="ruble">/кг</div>
@@ -168,44 +195,47 @@
         <a href="#">Сливочное с мятным сиропом</a>
         <a class="btn" href="#">Быстрый просмотр</a>
       </article>
-      <div class="pagination">
-        <ul>
-          <li class="active"><a href="#">1</a></li>
-          <li><a href="#">2</a></li>
-          <li><a href="#">3</a></li>
-          <li><a href="#">4</a></li>
-          <li><a href="#">5</a></li>
-        </ul>
-      </div>
     </section>
+    <div class="pagination">
+      <ul>
+        <li class="active"><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+      </ul>
+    </div>
   </main>
 
   <footer class="main-footer">
-    <div class="container">
-      <section class="footer-social">
-        <a class="social-btn social-btn-tw" href="#"><img src="img/pictures/twitter.png" width="32" height="32" alt="Twitter"></a>
-        <a class="social-btn social-btn-inst" href="#"><img src="img/pictures/instagram.png" width="32" height="32" alt="Instagram"></a>
-        <a class="social-btn social-btn-fb" href="#"><img src="img/pictures/facebook.png" width="32" height="32" alt="Facebook"></a>
-        <a class="social-btn social-btn-vk" href="#"><img src="img/pictures/vkontakte.png" width="32" height="32" alt="Vkontakte"></a>
-      </section>
-      <section class="footer-about-us">
-        <section class="about-us-left">
+    <div class="container clearfix">
+      <section class="footer-left">
+        <section class="footer-social">
+          <a class="social-btn social-btn-tw" href="#"><img src="img/pictures/twitter.png" width="32" height="32" alt="Twitter"></a>
+          <a class="social-btn social-btn-inst" href="#"><img src="img/pictures/instagram.png" width="32" height="32" alt="Instagram"></a>
+          <a class="social-btn social-btn-fb" href="#"><img src="img/pictures/facebook.png" width="32" height="32" alt="Facebook"></a>
+          <a class="social-btn social-btn-vk" href="#"><img src="img/pictures/vkontakte.png" width="32" height="32" alt="Vkontakte"></a>
+        </section>
+        <section class="about-us-right">
           <a href="#">Для поставщиков</a>
           <a href="#">О производстве</a>
         </section>
-        <section class="about-us-right">
+      </section>
+      <section class="footer-right">
+        <section class="about-us-left">
           <a href="#">Наши документы</a>
           <a href="#">Экологические стандарты</a>
         </section>
-      </section>
-      <section class="footer-copyright">
-        <a class="logo-htmlacademy" href="#"><img src="img/pictures/logo htmlacademy.png" alt="HTML Academy"></a>
-        <p>
-          Сделано в <a href="#">HTML Academy</a> &copy; 2016
-        </p>
+        <section class="footer-copyright">
+          <a class="logo-htmlacademy" href="#"><img src="img/pictures/logo htmlacademy.png" alt="HTML Academy"></a>
+          <p>
+            Сделано в <a href="#">HTML Academy</a> &copy; 2016
+          </p>
+        </section>
       </section>
     </div>
   </footer>
 
 </body>
+
 </html>

@@ -9,13 +9,12 @@
 
 <body>
   <header class="main-header">
-    <div class="container">
+    <div class="container clearfix">
       <div class="logo"><img src="img/pictures/logo.svg" alt="logo" width="154" height="64"></div>
       <nav class="main-navigation">
         <ul>
           <li>
             <div class="catalog">
-
               <a href="#">Каталог</a>
               <form class="catalog-sort">
                 <select name="product">
@@ -26,59 +25,60 @@
                     <option value="melorin">Мелорин</option>
                   </optgroup>
                 </select>
-
               </form>
-
             </div>
           </li>
           <li><a href="#">Доставка и оплата</a></li>
           <li><a href="#">О Компании</a></li>
         </ul>
       </nav>
-      <div class="header-right">
-        <div class="user-block">
-          <div class="search">
-            <a href="#"><img src="ing/pictures/loupe.png" width="17" height="17" alt="Search"></a>
-            <form class="search-form">
-              <input type="search" name="search" placeholder="Что ищем?">
-            </form>
-          </div>
-          <div class="login">
-            <a href="#">Вход</a>
-            <form class="login-form">
-              <input type="email" name="email" placeholder="Электронная почта">
-              <input type="password" name="password" placeholder="Пароль">
-              <button class="btn" type="submit" name="log-in">Войти</button>
-              <div class="login-info">
-                <a href="#">Забыли пароль?</a>
-                <a href="#">Новая регистрация</a>
-              </div>
-            </form>
-          </div>
-          <div class="shopping-cart">
-            <a href="#">Пусто</a>
-          </div>
+      <div class="user-block">
+        <div class="search">
+          <a href="#"><img src="img/pictures/loupe.png" width="17" height="17" alt="Search"></a>
+          <form class="search-form">
+            <input type="search" name="search" placeholder="Что ищем?">
+          </form>
+        </div>
+        <div class="login">
+          <a href="#">Вход</a>
+          <form class="login-form">
+            <input type="email" name="email" placeholder="Электронная почта">
+            <input type="password" name="password" placeholder="Пароль">
+            <button class="btn" type="submit" name="log-in">Войти</button>
+            <div class="login-info">
+              <a href="#">Забыли пароль?</a>
+              <a href="#">Новая регистрация</a>
+            </div>
+          </form>
+        </div>
+        <div class="shopping-cart">
+          <a href="#">Пусто</a>
         </div>
         <div class="info-contact">
           <p>С 10 до 22, ежедневно</p>
           <a href="tel:+88124502525">8 812 450-25-25</a>
         </div>
       </div>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div class="container clearfix">
       <section class="slider">
         <div class="slider-inner">
           <div class="slider-slides">
             <div class="slider-slide-1">
-              <img src="img/pictures/ice cream 1.png" width="647" height="584" alt="Ice cream">
+              <img class="promo-img" src="img/pictures/ice cream 1.png" width="647" height="584" alt="Ice cream">
               <h1 class="title">Крем-брюле и пломбир с малиновым джемом</h1>
               <a class="btn" href="">Давайте оба!</a>
             </div>
             <div class="slider-slide-2">
-              <img src="img/pictures/ice cream 2.png" width="647" height="584" alt="Ice cream">
+              <img class="promo-img" src="img/pictures/ice cream 2.png" width="647" height="584" alt="Ice cream">
               <h1 class="title">Шоколадный пломбир и лимонный сорбет</h1>
               <a class="btn" href="#">Давайте оба!</a>
             </div>
             <div class="slider-slide-3">
-              <img src="img/pictures/ice cream 3.png" width="647" height="584" alt="Ice cream">
+              <img class="promo-img" src="img/pictures/ice cream 3.png" width="647" height="584" alt="Ice cream">
               <h1 class="title">Пломбир с помадкой и клубничный щербет</h1>
               <a class="btn" href="#">Давайте оба!</a>
             </div>
@@ -93,12 +93,7 @@
           <label for="btn-3"></label>
         </div>
       </section>
-    </div>
-  </header>
-
-  <main class="main-content">
-    <div class="container">
-      <section class="banner">
+      <section class="banner clearfix">
         <div class="banner-left">
           <h2>Малинка даром!</h2>
           <p>При покупке 2 кг любого фруктового мороженного, добавим в Ваш заказ банку малинового варенья бесплатно. </p>
@@ -113,26 +108,26 @@
       <section class="hit">
         <article class="product">
           <img src="img/pictures/1.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-          <span class="price">310р/кг</span>
+          <div class="price"><span>310</span><img class="ruble" src="img/pictures/ruble.svg" width="32" height="37" alt="ruble">/кг</div>
           <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
         </article>
         <article class="product">
           <img src="img/pictures/2.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
-          <span class="price">380р/кг</span>
+          <div class="price"><span>380</span><img class="ruble" src="img/pictures/ruble.svg" width="32" height="37" alt="ruble">/кг</div>
           <a href="#">Сливочно-кофейное с кусочками шоколада</a>
         </article>
         <article class="product">
           <img src="img/pictures/3.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
-          <span class="price">355р/кг</span>
+          <div class="price"><span>355</span><img class="ruble" src="img/pictures/ruble.svg" width="32" height="37" alt="ruble">/кг</div>
           <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
         </article>
         <article class="product">
           <img src="img/pictures/4.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
-          <span class="price">415р/кг</span>
+          <div class="price"><span>415</span><img class="ruble" src="img/pictures/ruble.svg" width="32" height="37" alt="ruble">/кг</div>
           <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
         </article>
       </section>
-      <div class="features">
+      <div class="features clearfix">
         <h2 class="features-name">Магазин Глейси-это онлайн и офлайн магазин по продаже мороженного собственного производства на развес</h2>
         <div class="features-left">
           <div class="features-item fetures-item--production">
@@ -179,32 +174,33 @@
         </form>
       </section>
     </section>
-
   </main>
 
   <footer class="main-footer">
     <div class="container">
-      <section class="footer-social">
-        <a class="social-btn social-btn-tw" href="#"><img src="img/pictures/twitter.png" width="32" height="32" alt="Twitter"></a>
-        <a class="social-btn social-btn-inst" href="#"><img src="img/pictures/instagram.png" width="32" height="32" alt="Instagram"></a>
-        <a class="social-btn social-btn-fb" href="#"><img src="img/pictures/facebook.png" width="32" height="32" alt="Facebook"></a>
-        <a class="social-btn social-btn-vk" href="#"><img src="img/pictures/vkontakte.png" width="32" height="32" alt="Vkontakte"></a>
-      </section>
-      <section class="footer-about-us">
-        <section class="about-us-left">
+      <section class="footer-left">
+        <section class="footer-social">
+          <a class="social-btn social-btn-tw" href="#"><img src="img/pictures/twitter.png" width="32" height="32" alt="Twitter"></a>
+          <a class="social-btn social-btn-inst" href="#"><img src="img/pictures/instagram.png" width="32" height="32" alt="Instagram"></a>
+          <a class="social-btn social-btn-fb" href="#"><img src="img/pictures/facebook.png" width="32" height="32" alt="Facebook"></a>
+          <a class="social-btn social-btn-vk" href="#"><img src="img/pictures/vkontakte.png" width="32" height="32" alt="Vkontakte"></a>
+        </section>
+        <section class="about-us-right">
           <a href="#">Для поставщиков</a>
           <a href="#">О производстве</a>
         </section>
-        <section class="about-us-right">
+      </section>
+      <section class="footer-right">
+        <section class="about-us-left">
           <a href="#">Наши документы</a>
           <a href="#">Экологические стандарты</a>
         </section>
-      </section>
-      <section class="footer-copyright">
-        <a class="logo-htmlacademy" href="#"><img src="img/pictures/logo htmlacademy.png" alt="HTML Academy"></a>
-        <p>
-          Сделано в <a href="#">HTML Academy</a> &copy; 2016
-        </p>
+        <section class="footer-copyright">
+          <a class="logo-htmlacademy" href="#"><img src="img/pictures/logo htmlacademy.png" alt="HTML Academy"></a>
+          <p>
+            Сделано в <a href="#">HTML Academy</a> &copy; 2016
+          </p>
+        </section>
       </section>
     </div>
   </footer>
