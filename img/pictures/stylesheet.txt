@@ -1,0 +1,119 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-cart {
+    width: 21px;
+    height: 20px;
+    background-position: -10px -10px;
+}
+
+.sprite-cart2 {
+    width: 21px;
+    height: 20px;
+    background-position: -51px -10px;
+}
+
+.sprite-cow {
+    width: 48px;
+    height: 49px;
+    background-position: -92px -10px;
+}
+
+.sprite-facebook {
+    width: 32px;
+    height: 32px;
+    background-position: -160px -10px;
+}
+
+.sprite-heart {
+    width: 15px;
+    height: 13px;
+    background-position: -212px -10px;
+}
+
+.sprite-hit {
+    width: 61px;
+    height: 61px;
+    background-position: -212px -43px;
+}
+
+.sprite-ice-cream {
+    width: 49px;
+    height: 49px;
+    background-position: -10px -124px;
+}
+
+.sprite-ice-cream-1-small {
+    width: 33px;
+    height: 33px;
+    background-position: -79px -124px;
+}
+
+.sprite-ice-cream-2-small {
+    width: 33px;
+    height: 33px;
+    background-position: -132px -124px;
+}
+
+.sprite-instagram {
+    width: 32px;
+    height: 32px;
+    background-position: -185px -124px;
+}
+
+.sprite-leaf {
+    width: 49px;
+    height: 49px;
+    background-position: -237px -124px;
+}
+
+.sprite-login {
+    width: 21px;
+    height: 19px;
+    background-position: -10px -193px;
+}
+
+.sprite-login2 {
+    width: 21px;
+    height: 19px;
+    background-position: -51px -193px;
+}
+
+.sprite-loupe {
+    width: 17px;
+    height: 17px;
+    background-position: -92px -193px;
+}
+
+.sprite-loupe2 {
+    width: 17px;
+    height: 17px;
+    background-position: -129px -193px;
+}
+
+.sprite-pin {
+    width: 218px;
+    height: 142px;
+    background-position: -306px -10px;
+}
+
+.sprite-thermometer {
+    width: 48px;
+    height: 49px;
+    background-position: -306px -172px;
+}
+
+.sprite-twitter {
+    width: 33px;
+    height: 32px;
+    background-position: -374px -172px;
+}
+
+.sprite-vkontakte {
+    width: 32px;
+    height: 32px;
+    background-position: -427px -172px;
+}
