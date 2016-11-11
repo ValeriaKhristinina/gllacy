@@ -84,45 +84,65 @@
     <ul class="breadcrumbs">
       <li><a href="#">Главная</a></li>
       <li><a href="#">Каталог</a></li>
-      <li class="active"><a href="#">Сливочное</a></li>
+      <li class="active"><a>Сливочное</a></li>
     </ul>
     <h1 class="page-title">Сливочное мороженное</h1>
     <form class="filter clearfix" method="post">
       <fieldset class="sort filter-sort">
         <legend class="filter-title">Сортировка:</legend>
         <div class="select-wrapper">
-        <select name="sort">
-          <option value="first-popular">По популярности</option>
-          <option value="first-cheap">Сначала недорогие</option>
-          <option value="first-expensive">Сначала дорогие</option>
-          <option value="fatness">По жирности</option>
-        </select>
+          <select name="sort">
+            <option value="first-popular">По популярности</option>
+            <option value="first-cheap">Сначала недорогие</option>
+            <option value="first-expensive">Сначала дорогие</option>
+            <option value="fatness">По жирности</option>
+          </select>
         </div>
       </fieldset>
       <fieldset class="price-controls filter-sort">
-        <legend class="filter-title">Цена:</legend>
-        <output name="result"></output>
-        <input type="range" min="100" max="500" step="10" name="name" value="150" multiple="2">
+        <div class="range-filter">
+          <div class="price-controls">
+            <label class="min-price">Цена:
+              <input name="min-price" type="number" value="100">руб.</label>
+            <label class="max-price">
+              <input name="max-price" type="number" value="500">руб.</label>
+          </div>
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar"></div>
+            </div>
+            <div class="toggle toggle-min"></div>
+            <div class="toggle toggle-max"></div>
+          </div>
+
+        </div>
       </fieldset>
       <fieldset class="fatness filter-sort">
         <legend class="filter-title">Жирность:</legend>
         <ul>
           <li>
             <label>
-              <input type="radio" name="fatness" value="0">0%</label>
+              <input type="radio" name="fatness" value="0">
+              <span class="radio-indicator"></span> 0%
+            </label>
           </li>
           <li>
             <label>
-              <input type="radio" name="fatness" value="10" checked="checked">до 10%</label>
+              <input type="radio" name="fatness" value="10" checked="checked"><span class="radio-indicator"></span>до 10%
+            </label>
           </li>
           <li>
             <label>
               <input type="radio" name="fatness" value="30">
-            </label>до 30%</li>
+              <span class="radio-indicator"></span> до 30%
+            </label>
+          </li>
           <li>
             <label>
               <input type="radio" name="fatness" value="30+">
-            </label>выше 30%</li>
+              <span class="radio-indicator"></span> выше 30%
+            </label>
+          </li>
         </ul>
       </fieldset>
       <fieldset class="fillers filter-sort">
@@ -130,27 +150,29 @@
         <ul>
           <li>
             <label>
-              <input type="checkbox" name="chocolate" checked="checked">Шоколадные</label>
+              <input type="checkbox" name="chocolate" checked="checked">Шоколадные
+              <span class="checkbox-indicator"></span>
+            </label>
           </li>
           <li>
             <label>
-              <input type="checkbox" name="sugar-powder" checked="checked">Сахарные присыпки</label>
+              <input type="checkbox" name="sugar-powder" checked="checked">Сахарные присыпки<span class="checkbox-indicator"></span> </label>
           </li>
           <li>
             <label>
-              <input type="checkbox" name="fruits">Фрукты</label>
+              <input type="checkbox" name="fruits">Фрукты<span class="checkbox-indicator"></span> </label>
           </li>
           <li>
             <label>
-              <input type="checkbox" name="syrups">Сиропы</label>
+              <input type="checkbox" name="syrups">Сиропы<span class="checkbox-indicator"></span> </label>
           </li>
           <li>
             <label>
-              <input type="checkbox" name="jams">Джемы</label>
+              <input type="checkbox" name="jams">Джемы<span class="checkbox-indicator"></span> </label>
           </li>
         </ul>
       </fieldset>
-      <button class="btn filter-sort" type="submit" name="button">Применить</button>
+      <button class="btn-sort" type="submit" name="button">Применить</button>
     </form>
     <section class="content clearfix">
       <article class="product">
