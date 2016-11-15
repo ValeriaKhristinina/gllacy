@@ -11,79 +11,94 @@
 <body>
   <header class="main-header">
     <div class="container clearfix">
-      <div class="logo"><img src="img/pictures/logo.svg" alt="logo" width="154" height="64"></div>
+      <div class="logo">
+        <a href="index.html"><img src="img/pictures/logo.svg" alt="logo" width="154" height="64"></a>
+      </div>
       <nav class="main-navigation">
-        <ul>
-          <li class="active">
-            <div class="catalog">
-              <a>Каталог</a>
-              <form class="catalog-sort">
-                <select name="product">
-                  <optgroup label="Новинки">
-                    <option value="creamy">Сливочное</option>
-                    <option value="sherbets">Щербеты</option>
-                    <option value="fruit-ice">Фруктовый лед</option>
-                    <option value="melorin">Мелорин</option>
-                  </optgroup>
-                </select>
-              </form>
+        <ul class="main-navigation-list">
+          <li class="main-navigation-item catalog active">
+            <a href="catalogGllacy.html">Каталог</a>
+            <div class="catalog-wrapper">
+              <ul class="catalog-sort">
+                <li class="catalog-sort-item catalog-sort-title">Новинки</li>
+                <li class="catalog-sort-item catalog-sort-current"><a href="#">Сливочное</a></li>
+                <li class="catalog-sort-item"><a href="#">Щербеты</a></li>
+                <li class="catalog-sort-item"><a href="#">Фруктовый лед</a></li>
+                <li class="catalog-sort-item"><a href="#">Мелорин</a></li>
+              </ul>
             </div>
           </li>
-          <li><a href="#">Доставка и оплата</a></li>
-          <li><a href="#">О Компании</a></li>
+          <li class="main-navigation-item"><a href="#">Доставка и оплата</a></li>
+          <li class="main-navigation-item"><a href="#">О Компании</a></li>
         </ul>
       </nav>
       <div class="user-block">
         <div class="search">
           <a class="search-icon" href="#"></a>
           <form class="search-form">
-            <input type="search" name="search" placeholder="Что ищем?">
+            <div class="form-control">
+              <input type="search" name="search" placeholder="Что ищем?">
+              <label for="">Что ищем?</label>
+            </div>
           </form>
         </div>
         <div class="login">
           <a class="login-icon" href="#">Вход</a>
           <form class="login-form">
-            <input type="email" name="email" placeholder="Электронная почта">
-            <input type="password" name="password" placeholder="Пароль">
+            <div class="form-control">
+              <input type="email" name="email" placeholder="Электронная почта">
+              <label for="">Электронная почта</label>
+            </div>
+            <div class="form-control">
+              <input type="password" name="password" placeholder="Пароль">
+              <label class="" for="">Пароль</label>
+            </div>
             <button class="btn" type="submit" name="log-in">Войти</button>
             <div class="login-info">
-              <a href="#">Забыли пароль?</a>
-              <a href="#">Новая регистрация</a>
+              <a class="dark-link" href="#">Забыли пароль?</a>
+              <a class="dark-link" href="#">Новая регистрация</a>
             </div>
           </form>
         </div>
         <div class="cart">
           <a class="shopping-cart cart-not-empty" href="#">2 товара</a>
-          <form class="product-in-cart">
-            <div class="product-in-cart-1">
-              <button type="button" name="delete"></button>
-              <img src="img/pictures/ice cream 1 small.png" width="33" height="33" alt="ice cream">
-              <a href="#">Пломбир с апельсиновым джемом</a>
-              <span>1,5 кг x 200 руб.</span><span>300 руб.</span>
+          <div class="cart-wrapper">
+            <div class="cart-table">
+              <ul>
+                <li>
+                  <button class="content-delete" type="button" name="delete"></button>
+                </li>
+                <li><img src="img/pictures/ice cream 1 small.png" width="33" height="33" alt="ice cream"></li>
+                <li><a class="dark-link" href="#">Пломбир с апельсиновым джемом</a></li>
+                <li>1,5 кг x <span>200 руб.</span>300 руб.</li>
+              </ul>
+              <ul>
+                <li>
+                  <button class="content-delete" type="button" name="delete"></button>
+                </li>
+                <li><img src="img/pictures/ice cream 2 small.png" width="33" height="33" alt="ice cream"></li>
+                <li><a class="dark-link" href="#">Клубничный пломбир с присыпкой из белого шоколада</a></li>
+                <li>1,5 кг x <span>300 руб.</span>450 руб.</li>
+              </ul>
             </div>
-            <div class="product-in-cart-2">
-              <button type="button" name="delete"></button>
-              <img src="img/pictures/ice cream 2 small.png" width="33" height="33" alt="ice cream">
-              <a href="#">Клубничный пломбир с присыпкой из белого шоколада</a>
-              <span>1,5 кг x 300 руб.</span><span>450 руб.</span>
-              <span class="summ">Итого: 750 руб.</span>
-              <button class="btn" type="submit" name="button">Отправить заказ</button>
-            </div>
-          </form>
+            <div class="summ">Итого: 750 руб.</div>
+            <button class="btn" type="submit" name="button">Отправить заказ</button>
 
-          <div class="info-contact">
-            <p>С 10 до 22, ежедневно</p>
-            <a href="tel:+88124502525">8 812 450-25-25</a>
           </div>
+        </div>
+
+        <div class="info-contact">
+          <p>С 10 до 22, ежедневно</p>
+          <a class="light-link" href="tel:+88124502525">8 812 450-25-25</a>
         </div>
       </div>
     </div>
   </header>
 
-  <main class="container">
+  <main class="container container-m-border">
     <ul class="breadcrumbs">
-      <li><a href="#">Главная</a></li>
-      <li><a href="#">Каталог</a></li>
+      <li><a class="light-link" href="#">Главная</a></li>
+      <li><a class="light-link" href="#">Каталог</a></li>
       <li class="active"><a>Сливочное</a></li>
     </ul>
     <h1 class="page-title">Сливочное мороженное</h1>
@@ -101,9 +116,10 @@
       </fieldset>
       <fieldset class="price-controls filter-sort">
         <div class="range-filter">
-          <div class="price-controls">
+          <div class="price-controls filter-title">
             <label class="min-price">Цена:
               <input name="min-price" type="number" value="100">руб.</label>
+            —
             <label class="max-price">
               <input name="max-price" type="number" value="500">руб.</label>
           </div>
@@ -175,7 +191,7 @@
       <button class="btn-sort" type="submit" name="button">Применить</button>
     </form>
     <section class="content clearfix">
-      <article class="product">
+      <article class="product ">
         <img src="img/pictures/1.jpg" width="267" height="267" alt="ice cream">
         <div class="product-price"><span class="price">310&#8381;</span><span class="kg">/кг</span></div>
         <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
@@ -250,11 +266,17 @@
     </section>
     <div class="pagination">
       <ul>
+        <li>
+          <a class="page-prew" href="#"></a>
+        </li>
         <li class="active"><a href="#">1</a></li>
         <li><a href="#">2</a></li>
         <li><a href="#">3</a></li>
         <li><a href="#">4</a></li>
         <li><a href="#">5</a></li>
+        <li>
+          <a class="page-next" href="#"></a>
+        </li>
       </ul>
     </div>
   </main>
@@ -269,19 +291,19 @@
           <a class="social-btn social-btn-vk" href="#"></a>
         </section>
         <section class="about-us about-us-right">
-          <a href="#">Для поставщиков</a>
-          <a href="#">О производстве</a>
+          <a class="light-link" href="#">Для поставщиков</a>
+          <a class="light-link" href="#">О производстве</a>
         </section>
       </section>
       <section class="footer-right">
         <section class="about-us about-us-left">
-          <a href="#">Наши документы</a>
-          <a href="#">Экологические стандарты</a>
+          <a class="light-link" href="#">Наши документы</a>
+          <a class="light-link" href="#">Экологические стандарты</a>
         </section>
         <section class="footer-copyright">
           <a class="logo-htmlacademy" href="#"><img src="img/pictures/logo htmlacademy.png" alt="HTML Academy"></a>
           <p>
-            Сделано в <a class="htmlacademy" href="#">HTML Academy</a> &copy; 2016
+            Сделано в <a class="light-link htmlacademy" href="#">HTML Academy</a> &copy; 2016
           </p>
         </section>
       </section>
