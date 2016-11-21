@@ -13,7 +13,6 @@
   <input type="radio" id="btn-2" name="toggle">
   <input type="radio" id="btn-3" name="toggle">
   <div class="site-wrapper">
-    <div class="content-wrapper">
       <header class="main-header">
         <div class="container clearfix">
           <div class="logo">
@@ -170,15 +169,17 @@
           </form>
         </div>
         <section class="map">
-          <div id="yandex-map"></div>
-          <section class="contacts">
-            <span>Адрес главного офиса и офлайн магазина:</span>
-            <br> <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
-            <br> <span>Для заказов по телефону:</span>
-            <br> <b>8 812 450-25-25</b>
-            <br> <span>(с 10 до 20 ежедневно)</span>
-            <a class="btn" href="#modal-one">Форма обратной связи</a>
-          </section>
+          <div class="contacts-wrpaper">
+            <section class="contacts">
+              <span>Адрес главного офиса и офлайн магазина:</span>
+              <br> <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
+              <br> <span>Для заказов по телефону:</span>
+              <br> <b>8 812 450-25-25</b>
+              <br> <span>(с 10 до 20 ежедневно)</span>
+              <a class="btn" href="#modal-one">Форма обратной связи</a>
+            </section>
+          </div>
+          <div id="yandex-map" class="yandex-map"></div>
         </section>
       </main>
 
@@ -226,13 +227,10 @@
           <button class="btn btn-modal-submit" type="submit">Отправить</button>
         </form>
       </div>
-    </div>
   </div>
   <div class="modal-overlay"></div>
   <script type="text/javascript" src="js/main.js"></script>
-  <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=7FJGaVuPofDExx-8yUiuT4s2hIvc4k_M&amp;width=1200&amp;height=430&amp&id=yandex-map;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
-
-
+  <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=7FJGaVuPofDExx-8yUiuT4s2hIvc4k_M&amp;width=100%25&amp;height=430&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true&id=yandex-map"></script>
 </body>
 
 </html>
