@@ -17,7 +17,7 @@
       <header class="main-header">
         <div class="container clearfix">
           <div class="logo">
-            <a><img src="img/pictures/logo.svg" alt="logo" width="154" height="64"></a>
+            <span><img src="img/pictures/logo.svg" alt="logo" width="154" height="64"></span>
           </div>
           <nav class="main-navigation">
             <ul class="main-navigation-list">
@@ -26,7 +26,7 @@
                 <div class="catalog-wrapper">
                   <ul class="catalog-sort">
                     <li class="catalog-sort-item catalog-sort-title">Новинки</li>
-                    <li class="catalog-sort-item"><a href="catalogGllacy.html">Сливочное</a></li>
+                    <li class="catalog-sort-item"><a href="catalog.html">Сливочное</a></li>
                     <li class="catalog-sort-item"><a href="#">Щербеты</a></li>
                     <li class="catalog-sort-item"><a href="#">Фруктовый лед</a></li>
                     <li class="catalog-sort-item"><a href="#">Мелорин</a></li>
@@ -40,30 +40,35 @@
           <div class="user-block">
             <div class="search">
               <a class="search-icon" href="#"></a>
-              <form class="search-form">
-                <div class="form-control">
-                  <input type="search" name="search" placeholder="Что ищем?">
-                  <label for="">Что ищем?</label>
+                <div class="search-wrapper">
+                  <form class="search-form">
+                    <div class="form-control">
+                      <input type="search" name="search" placeholder="Что ищем?">
+                      <label>Что ищем?</label>
+                    </div>
+                  </form>
                 </div>
-              </form>
+
             </div>
             <div class="login">
               <a class="login-icon" href="#">Вход</a>
-              <form class="login-form">
-                <div class="form-control">
-                  <input type="email" name="email" placeholder="Электронная почта">
-                  <label for="">Электронная почта</label>
-                </div>
-                <div class="form-control">
-                  <input type="password" name="password" placeholder="Пароль">
-                  <label class="" for="">Пароль</label>
-                </div>
-                <button class="btn" type="submit" name="log-in">Войти</button>
-                <div class="login-info">
-                  <a class="dark-link" href="#">Забыли пароль?</a>
-                  <a class="dark-link" href="#">Новая регистрация</a>
-                </div>
-              </form>
+              <div class="login-wrapper">
+                <form class="login-form clearfix">
+                  <div class="form-control">
+                    <input type="email" name="email" placeholder="Электронная почта">
+                    <label>Электронная почта</label>
+                  </div>
+                  <div class="form-control">
+                    <input type="password" name="password" placeholder="Пароль">
+                    <label>Пароль</label>
+                  </div>
+                  <button class="btn" type="submit" name="log-in">Войти</button>
+                  <div class="login-info">
+                    <a class="dark-link" href="#">Забыли пароль?</a>
+                    <a class="dark-link" href="#">Новая регистрация</a>
+                  </div>
+                </form>
+              </div>
             </div>
             <a class="shopping-cart" href="#">Пусто</a>
             <div class="info-contact">
@@ -166,6 +171,7 @@
         </div>
         <section class="map">
           <img src="img/pictures/map.png" width="1200" height="430" alt="Map">
+
           <section class="contacts">
             <span>Адрес главного офиса и офлайн магазина:</span>
             <br> <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
@@ -197,7 +203,7 @@
               <a class="light-link" href="#">Экологические стандарты</a>
             </section>
             <section class="footer-copyright">
-              <a class="logo-htmlacademy" href="#"><img src="img/pictures/logo htmlacademy.png" alt="HTML Academy"></a>
+              <a class="logo-htmlacademy" href="#"><img class="logo-htmlacademy-icon" src="img/pictures/logo-htmlacademy.png" alt="HTML Academy" width="108" height="38"></a>
               <p>
                 Сделано в <a class="light-link htmlacademy" href="#">HTML Academy</a> &copy; 2016
               </p>
@@ -210,20 +216,23 @@
         <h2 class="modal-content-title">Мы обязательно Вам ответим!</h2>
         <form class="modal" id="modal-one">
           <div class="form-control">
-          <input type="text" name="name" placeholder="Как Вас зовут?">
-          <label for="">Как Вас зовут?</label>
+            <input type="text" name="name" placeholder="Как Вас зовут?">
+            <label>Как Вас зовут?</label>
           </div>
           <div class="form-control">
-          <input type="email" name="email" placeholder="Ваша почта для ответа?">
-          <label for="">Ваша почта для ответа?</label>
+            <input type="email" name="email" placeholder="Ваша почта для ответа?">
+            <label>Ваша почта для ответа?</label>
           </div>
-          <textarea name="" id="" cols="30" rows="5" placeholder="Напишите что-нибудь..."></textarea>
+          <textarea name="message" cols="30" rows="5" placeholder="Напишите что-нибудь..."></textarea>
           <button class="btn btn-modal-submit" type="submit">Отправить</button>
         </form>
       </div>
     </div>
   </div>
   <div class="modal-overlay"></div>
+  <script type="text/javascript" src="js/main.js"></script>
+
+
 </body>
 
 </html>
