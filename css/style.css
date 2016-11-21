@@ -367,7 +367,7 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: url("../img/pictures/sprite.png") no-repeat;
+  background: url("../img/sprite.png") no-repeat;
   width: 17px;
   height: 17px;
   background-position: -92px -193px;
@@ -379,7 +379,7 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: url("../img/pictures/sprite.png") no-repeat;
+  background: url("../img/sprite.png") no-repeat;
   width: 17px;
   height: 17px;
   background-position: -129px -193px;
@@ -499,7 +499,7 @@ img {
   position: absolute;
   top: 6px;
   left: 16px;
-  background: url("../img/pictures/sprite.png") no-repeat;
+  background: url("../img/sprite.png") no-repeat;
   width: 21px;
   height: 19px;
   background-position: -10px -193px;
@@ -514,7 +514,7 @@ img {
   position: absolute;
   top: 6px;
   left: 13px;
-  background: url("../img/pictures/sprite.png") no-repeat;
+  background: url("../img/sprite.png") no-repeat;
   width: 21px;
   height: 19px;
   background-position: -51px -193px;
@@ -585,7 +585,7 @@ img {
   position: absolute;
   top: 6px;
   left: 16px;
-  background: url("../img/pictures/sprite.png") no-repeat;
+  background: url("../img/sprite.png") no-repeat;
   width: 21px;
   height: 20px;
   background-position: -10px -10px;
@@ -604,7 +604,7 @@ img {
   position: absolute;
   top: 6px;
   left: 17px;
-  background: url("../img/pictures/sprite.png") no-repeat;
+  background: url("../img/sprite.png") no-repeat;
   width: 21px;
   height: 20px;
   background-position: -51px -10px;
@@ -663,7 +663,7 @@ img {
 .site-wrapper {
   min-width: 940px;
   background-color: #849d8f;
-  background-image: url("../img/pictures/ice cream 1.png");
+  background-image: url("../img/ice cream 1.png");
   background-repeat: no-repeat;
   background-position: top center;
   transition: background-image 0.5s ease, background-color 0.5s ease;
@@ -687,11 +687,11 @@ img {
 }
 
 .site-wrapper:before {
-  background-image: url("../img/pictures/ice cream 2.png");
+  background-image: url("../img/ice cream 2.png");
 }
 
 .site-wrapper:after {
-  background-image: url("../img/pictures/ice cream 3.png");
+  background-image: url("../img/ice cream 3.png");
 }
 
 .slide-title {
@@ -734,17 +734,17 @@ img {
 
 #btn-1:checked~.site-wrapper {
   background-color: #849d8f;
-  background-image: url("../img/pictures/ice cream 1.png");
+  background-image: url("../img/ice cream 1.png");
 }
 
 #btn-2:checked~.site-wrapper {
   background-color: #8996a6;
-  background-image: url("../img/pictures/ice cream 2.png");
+  background-image: url("../img/ice cream 2.png");
 }
 
 #btn-3:checked~.site-wrapper {
   background-color: #9d8b84;
-  background-image: url("../img/pictures/ice cream 3.png");
+  background-image: url("../img/ice cream 3.png");
 }
 
 .btn-slide {
@@ -791,7 +791,7 @@ img {
 .banner-left {
   float: left;
   margin-right: 26px;
-  background: url("../img/pictures/crimsonbg.png") no-repeat;
+  background: url("../img/crimsonbg.png") no-repeat;
   background-color: #60021a;
 }
 
@@ -804,7 +804,7 @@ img {
 
 .banner-right {
   float: right;
-  background: url("../img/pictures/chocolatebg.png") no-repeat;
+  background: url("../img/chocolatebg.png") no-repeat;
   background-color: #653a23;
 }
 
@@ -838,7 +838,7 @@ img {
 .product-hit::before {
   content: "";
   position: absolute;
-  background: url("../img/pictures/sprite.png") no-repeat;
+  background: url("../img/sprite.png") no-repeat;
   width: 61px;
   height: 61px;
   background-position: -212px -43px;
@@ -917,7 +917,7 @@ img {
   padding: 24px 20px;
   padding-bottom: 8px;
   margin-bottom: 40px;
-  background: url("../img/pictures/pattern.png");
+  background: url("../img/pattern.png");
   background-color: #ede2c9;
   border-radius: 15px;
 }
@@ -954,7 +954,7 @@ img {
   content: "";
   position: absolute;
   top: -7px;
-  background: url("../img/pictures/sprite.png") no-repeat;
+  background: url("../img/sprite.png") no-repeat;
   width: 49px;
   height: 49px;
   background-position: -10px -124px;
@@ -968,7 +968,7 @@ img {
   content: "";
   position: absolute;
   top: -7px;
-  background: url("../img/pictures/sprite.png") no-repeat;
+  background: url("../img/sprite.png") no-repeat;
   width: 49px;
   height: 49px;
   background-position: -237px -124px;
@@ -982,7 +982,7 @@ img {
   content: "";
   position: absolute;
   top: -7px;
-  background: url("../img/pictures/sprite.png") no-repeat;
+  background: url("../img/sprite.png") no-repeat;
   width: 48px;
   height: 49px;
   background-position: -92px -10px;
@@ -996,7 +996,7 @@ img {
   content: "";
   position: absolute;
   top: -7px;
-  background: url("../img/pictures/sprite.png") no-repeat;
+  background: url("../img/sprite.png") no-repeat;
   width: 48px;
   height: 49px;
   background-position: -306px -172px;
@@ -1010,7 +1010,7 @@ img {
   padding: 23px 20px;
   margin-right: 26px;
   margin-bottom: 40px;
-  background: url("../img/pictures/strawberrybg.jpg") no-repeat;
+  background: url("../img/strawberrybg.jpg") no-repeat;
   border-radius: 15px;
 }
 
@@ -1058,7 +1058,7 @@ img {
   box-sizing: border-box;
   width: 550px;
   height: 210px;
-  padding: 35px 20px;
+  padding: 29px 20px;
   margin-top: 5px;
   margin-left: -2px;
   background-color: #f8f7f4;
@@ -1092,18 +1092,9 @@ img {
 .map {
   position: relative;
   width: 1200px;
+  min-height: 430px;
   margin: 0 auto;
-}
-
-.map::before {
-  content: "";
-  position: absolute;
-  top: 140px;
-  left: 265px;
-  background: url("../img/pictures/sprite.png") no-repeat;
-  width: 218px;
-  height: 142px;
-  background-position: -306px -10px;
+  background-color: #ece4c6;
 }
 
 .contacts {
@@ -1596,7 +1587,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
 }
 
 .main-footer {
-  padding-top: 20px;
+  padding-top: 28px;
   padding-bottom: 30px;
 }
 
@@ -1632,7 +1623,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: url("../img/pictures/sprite.png") no-repeat;
+  background: url("../img/sprite.png") no-repeat;
   opacity: 0.8;
   border-radius: 50%;
 }
@@ -1704,7 +1695,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
   position: absolute;
   top: 3px;
   left: -20px;
-  background: url("../img/pictures/sprite.png") no-repeat;
+  background: url("../img/sprite.png") no-repeat;
   width: 15px;
   height: 13px;
   background-position: -212px -10px;
