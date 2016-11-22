@@ -252,7 +252,7 @@ img {
   background-color: rgba(255, 255, 255, 1);
 }
 
-.cart:hover .cart-wrapper{
+.cart:hover .cart-wrapper {
   display: block;
 }
 
@@ -346,7 +346,7 @@ img {
   border-radius: 50%;
 }
 
-.search:hover{
+.search:hover {
   background-color: #f7f6f3;
 }
 
@@ -373,7 +373,7 @@ img {
   background-position: -92px -193px;
 }
 
-.search:hover>.search-icon::before{
+.search:hover>.search-icon::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -455,7 +455,7 @@ img {
   border-radius: 5px;
 }
 
-.search:hover .search-wrapper{
+.search:hover .search-wrapper {
   display: block;
 }
 
@@ -467,7 +467,7 @@ img {
   margin-bottom: 10px;
 }
 
-.login:hover{
+.login:hover {
   font-size: 14px;
   line-height: 16px;
   vertical-align: top;
@@ -476,8 +476,6 @@ img {
   color: #ffffff;
   background-color: #f7f6f3;
 }
-
-
 
 .login-icon {
   display: inline-block;
@@ -505,7 +503,7 @@ img {
   background-position: -10px -193px;
 }
 
-.login:hover>.login-icon{
+.login:hover>.login-icon {
   color: #000000;
 }
 
@@ -529,7 +527,7 @@ img {
   z-index: 20;
 }
 
-.login-wrapper{
+.login-wrapper {
   display: none;
   position: absolute;
   top: 100%;
@@ -1085,7 +1083,6 @@ img {
 
 .delivery .btn {
   float: right;
-  ;
   outline: none;
 }
 
@@ -1097,11 +1094,11 @@ img {
   background-color: #ece4c6;
 }
 
-.yandex-map{
+.yandex-map {
   z-index: -1;
 }
 
-.contacts-wrpaper{
+.contacts-wrpaper {
   margin: 0 auto;
   width: 1200px;
   position: relative;
@@ -1262,7 +1259,7 @@ img {
 }
 
 select::-ms-expand {
-    display: none;
+  display: none;
 }
 
 .select-wrapper::before {
@@ -1757,13 +1754,13 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
 }
 
 @keyframes bounce {
-  0%   {
+  0% {
     transform: translateY(-2000px);
   }
-  70%  {
+  70% {
     transform: translateY(30px);
   }
-  90%  {
+  90% {
     transform: translateY(-10px);
   }
   100% {
@@ -1802,13 +1799,12 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
 
 .modal-content-show {
   display: block;
-    animation: bounce 0.6s;
+  animation: bounce 0.6s;
 }
 
 .modal-error {
   animation: shake 0.6s;
 }
-
 
 .btn-modal-close {
   position: absolute;
