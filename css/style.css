@@ -1756,13 +1756,39 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
   border-bottom: 1px solid rgba(255, 188, 158, 0.2);
 }
 
+@keyframes bounce {
+  0%   {
+    transform: translateY(-2000px);
+  }
+  70%  {
+    transform: translateY(30px);
+  }
+  90%  {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(0px);
+  }
+}
+
 .modal-content {
   box-sizing: border-box;
   display: none;
   position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -31%);
+  top: 36%;
+  left: 28%;
   width: 477px;
   padding: 16px 22px;
   padding-bottom: 26px;
@@ -1774,7 +1800,13 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
 
 .modal-content-show {
   display: block;
+    animation: bounce 0.6s;
 }
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
 
 .btn-modal-close {
   position: absolute;
