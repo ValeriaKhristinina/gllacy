@@ -1787,9 +1787,11 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
   box-sizing: border-box;
   display: none;
   position: fixed;
-  top: 36%;
-  left: 28%;
+  top: 50%;
+  left: 50%;
   width: 477px;
+  margin-left: -216px;
+  margin-top: -131px;
   padding: 16px 22px;
   padding-bottom: 26px;
   color: #000000;
