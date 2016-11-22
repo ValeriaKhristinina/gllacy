@@ -661,7 +661,7 @@ img {
 .site-wrapper {
   min-width: 940px;
   background-color: #849d8f;
-  background-image: url("../img/ice cream 1.png");
+  background-image: url("../img/promo-ice-cream-1.png");
   background-repeat: no-repeat;
   background-position: top center;
   transition: background-image 0.5s ease, background-color 0.5s ease;
@@ -685,11 +685,11 @@ img {
 }
 
 .site-wrapper:before {
-  background-image: url("../img/ice cream 2.png");
+  background-image: url("../img/promo-ice-cream-2.png");
 }
 
 .site-wrapper:after {
-  background-image: url("../img/ice cream 3.png");
+  background-image: url("../img/promo-ice-cream-3.png");
 }
 
 .slide-title {
@@ -732,17 +732,17 @@ img {
 
 #btn-1:checked~.site-wrapper {
   background-color: #849d8f;
-  background-image: url("../img/ice cream 1.png");
+  background-image: url("../img/promo-ice-cream-1.png");
 }
 
 #btn-2:checked~.site-wrapper {
   background-color: #8996a6;
-  background-image: url("../img/ice cream 2.png");
+  background-image: url("../img/promo-ice-cream-2.png");
 }
 
 #btn-3:checked~.site-wrapper {
   background-color: #9d8b84;
-  background-image: url("../img/ice cream 3.png");
+  background-image: url("../img/promo-ice-cream-3.png");
 }
 
 .btn-slide {
