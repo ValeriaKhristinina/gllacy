@@ -1,17 +1,3 @@
-@font-face {
-  font-family: 'Roboto';
-  src: url('../fonts/web/robotomedium.woff2') format('woff2'), url('../fonts/web/robotomedium.woff') format('woff');
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Roboto';
-  src: url('../fonts/web/roboto.woff2') format('woff2'), url('../fonts/web/roboto.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
 body {
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
@@ -240,11 +226,13 @@ img {
 }
 
 .content-delete::before {
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .content-delete::after {
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .cart-not-empty {
@@ -365,7 +353,8 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   background: url("../img/sprite.png") no-repeat;
   width: 17px;
   height: 17px;
@@ -377,7 +366,8 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   background: url("../img/sprite.png") no-repeat;
   width: 17px;
   height: 17px;
@@ -410,6 +400,30 @@ img {
 }
 
 .form-control input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.form-control input:focus::-moz-placeholder { /* Firefox 19+ */
+  color: transparent;
+}
+.form-control input:focus:-ms-input-placeholder { /* IE 10+ */
+  color: transparent;
+}
+.form-control input:focus:-moz-placeholder { /* Firefox 18- */
+  color: transparent;
+}
+
+.modal textarea:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.modal textarea:focus::-moz-placeholder { /* Firefox 19+ */
+  color: transparent;
+}
+.modal textarea:focus:-ms-input-placeholder { /* IE 10+ */
+  color: transparent;
+}
+.modal textarea:focus:-moz-placeholder { /* Firefox 18- */
   color: transparent;
 }
 
@@ -638,6 +652,7 @@ img {
   vertical-align: top;
   text-align: center;
   line-height: 45px;
+  background: -webkit-linear-gradient(top, #f26843, #e74a35);
   background: linear-gradient(to bottom, #f26843, #e74a35);
   color: #ffffff;
   border: none;
@@ -647,11 +662,13 @@ img {
 }
 
 .btn:hover {
+  background: -webkit-linear-gradient(top, #f58669, #ec6f5e);
   background: linear-gradient(to bottom, #f58669, #ec6f5e);
   box-shadow: 0 1px 2px 0 #ac1000;
 }
 
 .btn:active {
+  background: -webkit-linear-gradient(top, #d74531, #e1613e);
   background: linear-gradient(to bottom, #d74531, #e1613e);
   box-shadow: inset 0 2px 2px 0 #942718;
 }
@@ -662,6 +679,7 @@ img {
   background-image: url("../img/promo-ice-cream-1.png");
   background-repeat: no-repeat;
   background-position: top center;
+  -webkit-transition: background-image 0.5s ease, background-color 0.5s ease;
   transition: background-image 0.5s ease, background-color 0.5s ease;
 }
 
@@ -760,6 +778,7 @@ img {
 }
 
 .btn-slide:active {
+  background: -webkit-linear-gradient(top, #d74531, #e1613e);
   background: linear-gradient(to bottom, #d74531, #e1613e);
   box-shadow: inset 0 2px 2px 0 #942718;
 }
@@ -771,9 +790,9 @@ img {
 .banner {
   box-sizing: border-box;
   width: 560px;
-  height: 230px;
   padding: 20px;
   padding-top: 17px;
+  padding-bottom: 24px;
   color: #ffffff;
   border-radius: 10px;
 }
@@ -799,7 +818,7 @@ img {
   float: right;
   font-size: 18px;
   line-height: 24px;
-  padding: 11px 23px;
+  padding: 10px 23px;
 }
 
 .banner-right {
@@ -1006,11 +1025,12 @@ img {
   box-sizing: border-box;
   float: left;
   width: 560px;
-  height: 220px;
   padding: 23px 20px;
+  padding-bottom: 81px;
   margin-right: 26px;
   margin-bottom: 40px;
   background: url("../img/strawberrybg.jpg") no-repeat;
+  background-color: #fefefe;
   border-radius: 15px;
 }
 
@@ -1027,7 +1047,8 @@ img {
 }
 
 .light-link:hover, .light-link:active {
-  text-decoration-color: rgba(255, 188, 158, 0.2);
+  -webkit-text-decoration-color: rgba(255, 188, 158, 0.2);
+          text-decoration-color: rgba(255, 188, 158, 0.2);
   color: #ffbc9e;
 }
 
@@ -1044,9 +1065,10 @@ img {
   box-sizing: border-box;
   float: right;
   width: 560px;
-  height: 220px;
   padding-left: 7px;
+  padding-bottom: 6px;
   margin-bottom: 40px;
+  background: -webkit-linear-gradient(135deg, #92cdff 12.5%, #ffffff 12.5%, #ffffff 25%, #fe9e90 25%, #fe9e90 37.5%, #ffffff 37.5%, #ffffff 50%, #92cdff 50%, #92cdff 62.5%, #ffffff 62.5%, #ffffff 75%, #fe9e90 75%, #fe9e90 87.5%, #ffffff 87.5%);
   background: linear-gradient(-45deg, #92cdff 12.5%, #ffffff 12.5%, #ffffff 25%, #fe9e90 25%, #fe9e90 37.5%, #ffffff 37.5%, #ffffff 50%, #92cdff 50%, #92cdff 62.5%, #ffffff 62.5%, #ffffff 75%, #fe9e90 75%, #fe9e90 87.5%, #ffffff 87.5%);
   background-size: 40px 40px;
   border-radius: 15px;
@@ -1055,8 +1077,8 @@ img {
 .delivery-wrapper {
   box-sizing: border-box;
   width: 550px;
-  height: 210px;
   padding: 29px 20px;
+  padding-bottom: 36px;
   margin-top: 5px;
   margin-left: -2px;
   background-color: #f8f7f4;
@@ -1091,6 +1113,8 @@ img {
   width: 100%;
   min-height: 430px;
   margin: 0 auto;
+  background: url("../img/map.jpg") no-repeat;
+  background-size: cover;
   background-color: #ece4c6;
 }
 
@@ -1118,7 +1142,6 @@ img {
 
 .contacts span {
   display: inline-block;
-  width: 180px;
   font-size: 14px;
   line-height: 20px;
   font-weight: normal;
@@ -1134,7 +1157,6 @@ img {
   display: inline-block;
   font-size: 18px;
   line-height: 24px;
-  width: 225px;
   padding-bottom: 16px;
   vertical-align: top;
 }
@@ -1147,8 +1169,9 @@ img {
   font-size: 18px;
   line-height: 24px;
   font-weight: bold;
-  padding: 10px 27px;
-  margin-top: 22px;
+  padding: 10px 26px;
+  margin-top: 24px;
+  white-space: nowrap;
 }
 
 .breadcrumbs {
@@ -1171,7 +1194,8 @@ img {
   height: 3px;
   border-right: 1px solid #ffffff;
   border-bottom: 1px solid #ffffff;
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .breadcrumbs li:not(.active)::after {
@@ -1183,7 +1207,8 @@ img {
   height: 3px;
   border-right: 1px solid #ffffff;
   border-bottom: 1px solid #ffffff;
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .breadcrumbs a, .breadcrumbs span {
@@ -1196,7 +1221,7 @@ img {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.breadcrumbs .active span {
+.breadcrumbs .breadcrumbs-current {
   border: none;
 }
 
@@ -1470,7 +1495,8 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
   bottom: 7px;
   width: 7px;
   height: 2px;
-  transform: rotate(-140deg);
+  -webkit-transform: rotate(-140deg);
+          transform: rotate(-140deg);
   background-color: #ffffff;
 }
 
@@ -1481,7 +1507,8 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
   bottom: 4px;
   width: 2px;
   height: 12px;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
   background-color: #ffffff;
 }
 
@@ -1558,7 +1585,8 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
   padding-top: 0;
   border-right: 2px solid rgba(255, 255, 255, 0.5);
   border-bottom: 2px solid rgba(255, 255, 255, 0.5);
-  transform: rotate(140deg);
+  -webkit-transform: rotate(140deg);
+          transform: rotate(140deg);
 }
 
 .pagination .page-next {
@@ -1569,7 +1597,8 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
   border-right: 2px solid #ffffff;
   border-bottom: 2px solid #ffffff;
   padding-top: 0;
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .pagination .active {
@@ -1583,7 +1612,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
   padding-top: 4px;
 }
 
-.pagination .active a {
+.pagination .current-page {
   display: inline-block;
   vertical-align: top;
   padding-top: 4px;
@@ -1596,7 +1625,8 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
   bottom: 4px;
   right: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   width: 1146px;
   height: 1px;
   background-color: rgba(255, 255, 255, 0.3);
@@ -1638,7 +1668,8 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   background: url("../img/sprite.png") no-repeat;
   opacity: 0.8;
   border-radius: 50%;
@@ -1761,30 +1792,71 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
   border-bottom: 1px solid rgba(255, 188, 158, 0.2);
 }
 
-@keyframes bounce {
+@-webkit-keyframes bounce {
   0% {
-    transform: translateY(-2000px);
+    -webkit-transform: translateY(-2000px);
+            transform: translateY(-2000px);
   }
   70% {
-    transform: translateY(30px);
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
   }
   90% {
-    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
   }
   100% {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateY(-2000px);
+            transform: translateY(-2000px);
+  }
+  70% {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  90% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes shake {
+  0%, 100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
   }
 }
 
 @keyframes shake {
   0%, 100% {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
   10%, 30%, 50%, 70%, 90% {
-    transform: translateX(-10px);
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
   }
   20%, 40%, 60%, 80% {
-    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
   }
 }
 
@@ -1807,11 +1879,13 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
 
 .modal-content-show {
   display: block;
-  animation: bounce 0.6s;
+  -webkit-animation: bounce 0.6s;
+          animation: bounce 0.6s;
 }
 
 .modal-error {
-  animation: shake 0.6s;
+  -webkit-animation: shake 0.6s;
+          animation: shake 0.6s;
 }
 
 .btn-modal-close {
@@ -1838,11 +1912,13 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
 }
 
 .btn-modal-close::before {
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .btn-modal-close::after {
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .modal-content-title {
@@ -1884,10 +1960,6 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
   outline: none;
   border: 1px solid #8fbdec;
   box-shadow: inset 1px 1px 0 0 #8fbdec, inset -1px 1px 0 0 #8fbdec, inset 1px -1px 0 0 #8fbdec, inset -1px -1px 0 0 #8fbdec;
-}
-
-.form-control textarea:focus::-webkit-input-placeholder {
-  color: transparent;
 }
 
 .form-control input {
