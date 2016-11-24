@@ -1236,7 +1236,7 @@ img {
 }
 
 .filter {
-  width: 880px;
+  width: 900px;
   margin-bottom: 31px;
 }
 
@@ -1350,6 +1350,13 @@ select::-ms-expand {
   cursor: pointer;
   border-radius: 50%;
   background-color: #ffffff;
+  cursor: pointer;
+}
+
+.toggle:hover{
+  top: 7px;
+  width: 22px;
+  height: 22px;
 }
 
 .range-controls .toggle-min {
@@ -1378,9 +1385,13 @@ select::-ms-expand {
   outline: none;
 }
 
-input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+.price-controls input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+.price-controls input {
+    -moz-appearance:textfield;
 }
 
 .price-controls label {
@@ -1407,7 +1418,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
   font-size: 16px;
   line-height: 18px;
   padding-top: 10px;
-  padding-left: 30px;
+  padding-left: 28px;
   padding-right: 15px;
   color: #ffffff;
   cursor: pointer;
@@ -1417,6 +1428,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
   position: relative;
   vertical-align: top;
   margin-right: 3px;
+  cursor: pointer;
 }
 
 .fatness input[type="radio"] {
@@ -1433,6 +1445,13 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
   border-radius: 50%;
 }
 
+.fatness label:hover .radio-indicator{
+  box-sizing: border-box;
+  width: 22px;
+  height: 22px;
+  border: 2px solid #ffffff;
+}
+
 .fatness input[type="radio"]:checked+.radio-indicator::before {
   content: "";
   position: absolute;
@@ -1442,6 +1461,11 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
   height: 12px;
   background-color: #ffffff;
   border-radius: 50%;
+}
+
+.fatness input[type="radio"]:checked:hover+.radio-indicator::before{
+  left: 3px;
+  bottom: 3px;
 }
 
 .fillers {
@@ -1476,6 +1500,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
 
 .fillers label {
   position: relative;
+  cursor: pointer;
 }
 
 .fillers input[type="checkbox"]+.checkbox-indicator {
@@ -1486,6 +1511,13 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
   height: 20px;
   border: 1px solid #ffffff;
   border-radius: 3px;
+}
+
+.fillers label:hover .checkbox-indicator{
+  box-sizing: border-box;
+  width: 22px;
+  height: 22px;
+  border: 2px solid #ffffff;
 }
 
 .fillers input[type="checkbox"]:checked+.checkbox-indicator::before {
@@ -1510,6 +1542,16 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   background-color: #ffffff;
+}
+
+.fillers input[type="checkbox"]:checked:hover+.checkbox-indicator::before{
+  left: 2px;
+  bottom: 6px;
+}
+
+.fillers input[type="checkbox"]:checked:hover+.checkbox-indicator::after{
+  left: 10px;
+  bottom: 3px;
 }
 
 .btn-sort {
